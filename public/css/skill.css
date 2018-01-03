@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+html, body {
+	font-size: 62.5%;
+	border: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.nav-header {
+	width: 100%;
+	font-size: 1.6rem;
+	font-family: 'Ubuntu', sans-serif;
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+}
+nav.hide {
+	display: none;
+}
+.nav-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	   -moz-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	min-height: 6vh;
+}
+.nav-header a {
+	text-decoration: none;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #A9A9A9;
+	border-bottom: 1.5px solid #9400D3;
+}
+.nav-header .navItem {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+}
+.nav-header .navLast {
+	-webkit-box-flex: 3;
+	-webkit-flex: 3 0 auto;
+	   -moz-box-flex: 3;
+	    -ms-flex: 3 0 auto;
+	        flex: 3 0 auto;
+}
+.nav-header a.active,.nav-header a:hover {
+	background-color: #9400D3;
+	color: white;
+}
+
+
+.section {
+	position: relative;
+	width: 100%;
+	height: -moz-calc(100% - 120px);
+	height: calc(100% - 120px);
+	
+}
+.section .art {
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+}
+.section .art1 {
+	z-index: 6;
+}
+.section .art2 {
+	z-index: 5;
+}
+.section .art3 {
+	z-index: 4;
+}
+.section .art4 {
+	z-index: 3;
+}
+.section .art5 {
+	z-index: 2;
+}
+.section .art6 {
+	z-index: 1;
+}
+.section video {
+	position: absolute;
+}
+.section .art-wrap p {
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size: 5rem;
+	text-align: center;
+	word-wrap:break-word;
+	font-weight: bold;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+
+#main-nav {
+	width: 100%;
+	height: 80px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: fixed;
+	left: 0;
+	bottom: 40px;
+	color: #6e737f;
+	background: white;
+	z-index: 99;
+	font-size: 13px;
+}
+
+#main-nav .left-part {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 80px;
+}
+#main-nav .left-part strong {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right: 10px;
+	line-height: 80px;
+}
+#main-nav .left-part .video-list {
+	padding: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: -moz-calc(100% - 130px);
+	width: calc(100% - 130px);
+	max-width: 500px;
+}
+#main-nav .left-part .video-list li {
+	list-style: none;
+	cursor: default;
+	display: inline-block;
+}
+#main-nav .right-part {
+	border-left: 1px solid #6e737f;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: 80px;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: white;
+}
+
+#main-nav .right-part-1 {
+	width: 127px;
+	background: url('../img/skill_reset.svg') no-repeat 14% center;
+	-moz-background-size: 32px 32px;
+	     background-size: 32px 32px;
+	background-color: white;
+}
+#main-nav .right-part-2 {
+	width: 144px;
+	background: url('../img/skill_list.svg') no-repeat 10% center; 
+	-moz-background-size: 32px 32px; 
+	     background-size: 32px 32px;
+	background-color: white;
+}
+#main-nav .right-part strong{
+	position: relative;
+	left: 15%;
+}
+
+#main-nav .right-part:hover {
+	cursor: pointer;
+	color: #FD7146;
+}
+#main-nav .right-part-1:hover {
+	background-image: url('../img/skill_reset_hover.svg');
+}
+#main-nav .right-part-2:hover {
+	background-image: url('../img/skill_list_hover.svg');
+}
+
+@media screen and (min-width: 1070px) {
+	#main-nav .right-part-1 {
+		width: 137px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	#main-nav .right-part-1 {
+		width: 154px;
+	}
+	#main-nav .right-part-2 {
+		width: 164px;
+	}
+	
+}
+@media screen and (max-width: 424px) {
+	#main-nav {
+		display: block;
+	}
+	#main-nav .left-part {
+		position: absolute;
+		left: 0;
+	}
+	#main-nav .right-part {
+		position: fixed;
+	}
+	#main-nav .right-part-1 {
+		right: 127px;
+	}
+	#main-nav .right-part-2 {
+		right: 0;
+	}
+}
+.footer {
+	z-index: 99;
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	bottom: 0;
+	left: 0;
+	background: #22252E;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}

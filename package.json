@@ -1,0 +1,27 @@
+{
+  "name": "aliang-web",
+  "version": "1.0.0",
+  "description": "scenery skill life",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llmPluto/aliang-web.git"
+  },
+  "keywords": [
+    "scenery",
+    "skill",
+    "life"
+  ],
+  "author": "aliangben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llmPluto/aliang-web/issues"
+  },
+  "homepage": "https://github.com/llmPluto/aliang-web#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>aliang-web</title>
+	<link rel="stylesheet" type="text/css" href="../css/skill.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		var width,height;
+		$(window).resize(function(){
+			width = $('html').width();
+			height = $('html').height()-120;
+
+			if( width > 1.7777778*height) {
+				var temp = (height-width/1.7777778)*0.5;
+				$('.section .art video').css({
+					'width':'100%',
+					'height':'auto',
+					'left' : 0,
+					'top': temp
+				});
+			}else {
+				var temp = (width-height*1.7777778)*0.5;
+				$('.section .art video').css({
+					'height': height,
+					'width': 'auto',
+					'top' : 0,
+					'left':temp
+				});
+			}
+		})
+		$(function(){
+			width = $('html').width();
+			height = $('html').height()-120;
+
+			if( width > 1.7777778*height) {
+				var temp = (height-width/1.7777778)*0.5;
+				$('.section .art video').css({
+					'width':'100%',
+					'height':'auto',
+					'left' : 0,
+					'top': temp
+				});
+			}else {
+				var temp = (width-height*1.7777778)*0.5;
+				$('.section .art video').css({
+					'height': height,
+					'width': 'auto',
+					'top' : 0,
+					'left':temp
+				});
+			}
+		})
+	</script>
+</head>
+<body>
+	<nav class="nav-header hide">
+		<div class="nav-wrap">
+			<a href="./index.html" class="navItem">Home</a>
+			<a href="./scenery.html" class="navItem">Scenery</a>
+			<a href="./skill.html" class="navItem active">Skill</a>
+			<a href="./life.html" class="navItem">Life</a>
+			<a href="./contact.html" class="navLast">Contact</a>
+		</div>
+	</nav>
+	<section class="section">
+		<article class="art art1">
+			<div class="art-wrap">
+				<video src="../video/part1.mp4" preload="metadata" class="video1"></video>
+				<p>antarctica,a scientific territory</p>
+			</div>
+		</article>
+		<article class="art art2">
+			<div class="art-wrap">
+				<video src="../video/part2.mp4"  preload="metadata" class="video2"></video>
+				<p>investigating the depths of time</p>
+			</div>
+		</article>
+		<article class="art art3">
+			<div class="art-wrap">
+				<video src="../video/part3.mp4"  preload="metadata" class="video3"></video>
+				<p>exploring ancient climate</p>
+			</div>
+		</article>
+		<article class="art art4">
+			<div class="art-wrap">
+				<video src="../video/part4.mp4"  preload="metadata" class="video4"></video>
+				<p>a broken nutural cycle</p>
+			</div>
+		</article>
+		<article class="art art5">
+			<div class="art-wrap">
+				<video src="../video/part5.mp4"  preload="metadata" class="video5"></video>
+				<p>mankind disrupts the giants of nature</p>
+			</div>
+		</article>
+		<article class="art art6">
+			<div class="art-wrap">
+				<video src="../video/part6.mp4"  preload="metadata" class="video6"></video>
+				<p>a new era: the anthropocene</p>
+			</div>
+		</article>
+	</section>
+	<footer class="footer">
+	</footer>
+	<nav id="main-nav">
+		<div class="left-part">
+			<strong>PARTS</strong>
+			<ul class="video-list">
+				<li class="li1">1</li>
+				<li class="li2">2</li>
+				<li class="li3">3</li>
+				<li class="li4">4</li>
+				<li class="li5">5</li>
+				<li class="li6">6</li>
+			</ul>
+		</div>
+		<div class="right-part right-part-1">
+			<strong>RESET</strong>
+		</div>
+		<div class="right-part right-part-2">
+			<strong>MY WEBSITE</strong>
+		</div>
+	</nav>
+	<script type="text/javascript" src="../js/skill.js"></script>
+</body>
+</html>

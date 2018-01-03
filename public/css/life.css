@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+html,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: url('../img/life_back.jpg') no-repeat center center;
+	-moz-background-size: cover;
+	     background-size: cover;
+	background-attachment: fixed;
+}
+
+.sec {
+	width: -moz-calc(446px*1.5);
+	width: calc(446px*1.5);
+	height: -moz-calc(244px*1.5);
+	height: calc(244px*1.5);
+	background-color: white;
+	margin: 0 auto;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 3em;
+	text-transform: uppercase;
+	-moz-border-radius: 2rem;
+	     border-radius: 2rem;
+}
+.sec + .sec {
+	margin-top: 6rem;
+}
+.sec1 {
+	background: url('../img/life_head.jpg') no-repeat ;
+	-moz-background-size: cover;
+	     background-size: cover;
+	height: -moz-calc(446px*1.5);
+	height: calc(446px*1.5);
+}
+.sec2 {
+	background: url('../img/life_head2.jpg') no-repeat ;
+	-moz-background-size: cover;
+	     background-size: cover;
+	height: 446px;
+}
+.sec3 {
+	background: url('../img/life_high.jpg') no-repeat ;
+	-moz-background-size: cover;
+	     background-size: cover;
+	height: 376.312px;
+}
+.sec4 {
+	background: url('../img/life_middle2.jpg') no-repeat;
+	-moz-background-size: cover;
+	     background-size: cover;
+	height: 447px;
+}
+
+.sec5 {
+	background: url('../img/life_middle.jpg') no-repeat;
+	-moz-background-size: cover;
+	     background-size: cover;
+	height: 438px;
+}
+.sec6 {
+	background: url('../img/life_coffee.jpg') no-repeat;
+	-moz-background-size: cover;
+	     background-size: cover;
+	height: 595px;
+}
+.sec7 {
+	background: url('../video/life_gif1.gif') no-repeat;
+	-moz-background-size: cover;
+	     background-size: cover;
+}

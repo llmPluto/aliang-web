@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+* {
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+html, body {
+	font-size: 62.5%;
+	border: 0;
+	margin: 0;
+	width: 100%;
+}
+.nav-header {
+	font-size: 1.6rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	   -moz-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	min-height: 6vh;
+	font-family: 'Ubuntu', sans-serif;
+}
+.nav-header a {
+	text-decoration: none;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #A9A9A9;
+	border-bottom: 1.5px solid #9400D3;
+}
+.nav-header .navItem {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+}
+.nav-header .navLast {
+	-webkit-box-flex: 3;
+	-webkit-flex: 3 0 auto;
+	   -moz-box-flex: 3;
+	    -ms-flex: 3 0 auto;
+	        flex: 3 0 auto;
+}
+.nav-header a.active,.nav-header a:hover {
+	background-color: #9400D3;
+	color: white;
+}
+.header {
+	width: 100%;
+	height: 94vh;
+	background-image: url("../img/main_header.jpg");	
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	     background-size: cover;
+	background-position: center bottom;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.header span {
+	font-size: 2.8rem;
+	font-family: 'Pacifico', cursive;
+	color: white;
+}
+.article {
+	font-family: SimSun;
+	font-size: 1.5rem;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #696969;
+	line-height: 3rem;
+}
+.article span {
+	display: inline-block;
+	text-indent: 2rem;
+}
+.photoWall {
+	margin-top: 2rem;
+	width: 100%;
+}
+.photoWall .group {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.photoWall .group + .group {
+	margin-top: 0.5rem;
+}
+.photoWall .group img {
+	width: 30vw;
+}
+
+@media screen and (min-width: 550px) {
+	.article {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		   -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		   -moz-box-orient: vertical;
+		   -moz-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		   -moz-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		font-size: 2rem;
+	}
+	.article span {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+	.photoWall .group img {
+		width: 32vw;
+	}
+}
+.last {
+	padding-bottom: 3rem;
+}
